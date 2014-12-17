@@ -2,6 +2,14 @@ var expect      = require('chai').expect,
     jsonPointer = require('../index.js');
 
 describe('SimpleJSONPointer', function () {
+    it('should find root', function () {
+        var source = {
+            a: true,
+            b: 'test'
+        };
+        expect(jsonPointer(source, '#/')).to.equal(source);
+    });
+
     it('should find a root property', function () {
         var source = {
             a: true,

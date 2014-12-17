@@ -19,6 +19,11 @@ module.exports = function(obj, jp) {
         return null;
     }
 
+    // is root
+    if (jp === '#/') {
+        return obj;
+    }
+
     path = jp.slice(2).split('/');
     currentObj = obj;
     while (path.length) {
