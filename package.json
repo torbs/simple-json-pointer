@@ -1,6 +1,6 @@
 {
   "name": "simple-json-pointer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Tor Brekke Skjøtskift",
     "email": "tor.skjotskift@amedia.no"
@@ -14,9 +14,6 @@
   "scripts": {
     "start": "node ./index.js",
     "test": "./node_modules/.bin/mocha --reporter spec --ui bdd"
-  },
-  "engines": {
-    "node": "0.10.x"
   },
   "bugs": {
     "url": "https://github.com/amedia/javascript-modules/issues"
